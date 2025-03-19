@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -148,19 +148,19 @@
 
         @media (max-width: 600px) {
             #formContainer {
-                height: auto; /* Allows it to expand naturally */
-                padding: 50px 20px; /* Adds breathing space */
+                padding: 50px 10px;
             }
 
-            #form {
-                width: 90%;
-                margin: auto; /* Ensures centering */
+            #form, #popup {
+                width: 95%; /* Make it take most of the screen width */
+                max-width: 500px; /* Prevent it from being too wide */
             }
 
-            body {
-                background-attachment: scroll;
+            #popup {
+                padding: 20px; /* Adjust padding for a balanced look */
             }
         }
+
 
         @media (max-width: 1024px) {
             #form {
@@ -193,7 +193,7 @@
     <!-- 🎉 POP-UP MESSAGE -->
     <div id="popup">
         <h2><span id="userName"></span> عزيز،<br /> سال نو فرخنده</h2>
-        <p style="font-size:22px;">
+        <p style="font-size:18px;">
             همه ساله بخت تو &nbsp;&nbsp;&nbsp;پیروز باد
             <br />
             شبان سیه &nbsp;&nbsp;&nbsp;بر تو &nbsp;&nbsp;&nbsp;نوروز باد
